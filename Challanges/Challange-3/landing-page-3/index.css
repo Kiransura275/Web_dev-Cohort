@@ -1,0 +1,205 @@
+/* Challenge CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Georgia", serif;
+    line-height: 1.6;
+    color: #333;
+  }
+  
+  .header {
+    /* Define header styles here */
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+  }
+  
+  .logo {
+    /* Define logo styles here */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    color: #8B4513;
+    margin:  0 50px;
+    font-size: 1.6em;
+    font-weight: 600;
+
+  }
+  
+  .logo img {
+    /* Define image styles within the logo here */
+    border-radius: 50%;
+    border: 2px solid #8B4513;
+    width: 45px;
+    height: 45px;
+    object-fit: cover;
+    
+  }
+  .nav-menu
+  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    margin: 0 60px;
+  }
+
+
+  
+  .nav-menu a {
+    /* Define navigation link styles here */
+    text-decoration: none;
+    color: #8B4513;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+   
+
+  }
+  
+  .nav-menu a:hover {
+    /* Define hover styles for navigation links here */
+    /* font-weight: 700; */
+    transform: translateY(3px);
+    
+  }
+  
+  .hero {
+    /* Define hero section styles here */
+    height: 400px;
+    /* border:  2px solid yellow; */
+    background-image:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url("./assets/chaipatti.png");
+    background-size: cover;
+    background-position: center;    
+    color: white;
+  }
+  .hero-text
+  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    gap: 15px;
+  
+  
+  
+  }
+  
+  .hero-text h1 {
+    /* Define styles for h1 in hero-text here */
+    font-size: 2.4em;
+    text-align: center;
+    
+  }
+  
+  .hero-text p {
+    /* Define styles for paragraph in hero-text here */
+    text-align: center;
+    font-size: 17px;
+  }
+  
+  .shop-button {
+    /* Define shop button styles here */
+    padding :12px 25px;
+    background-color: #8B4513;
+    border: none;
+    border-radius:20px ;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .shop-button:hover {
+    /* Define hover styles for shop button here */
+    transform: scale(1.05);
+  }
+  
+  .tea-collection {
+    /* Define tea collection section styles here */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #8B4513;
+  }
+  
+  .tea-collection h2 {
+    /* Define styles for h2 in tea collection here */
+    font-size: 1.7em;
+    margin: 40px 0 ;
+  }
+  
+  .tea-cards {
+    /* Define tea cards container styles here */
+    /* border: 2px solid red; */
+
+    display: grid;
+    grid-template-rows: repeat(2,220px);
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    /* border: 2px solid red; */
+    max-width: 80%;
+    grid-gap:30px ;
+    
+
+   
+
+   
+  
+
+
+  }
+  
+  .tea-card {
+    /* Define styles for each tea card here */
+    /* border: 2px solid green; */
+
+    height: 200px;
+    width: 240px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    background-color: rgba(245, 243, 243, 0.452);
+    border-radius: 10px;
+    padding: 15px 27px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+
+  }
+  .tea-card:hover
+  {
+    border: 1px solid #8B4513;
+    transform: scale(0.9);
+
+  }
+  
+  .tea-card h3 {
+    /* Define styles for tea card headings here */
+    font-size: 1.2em;
+  }
+  
+  .tea-card p {
+    /* Define styles for tea card paragraph text here */
+    opacity: 0.7;
+    color: black;
+  }
+  
+
+  @media screen and (max-width:1024px) {
+    .nav-menu
+    {
+      display: none;
+    }
+    
+  }

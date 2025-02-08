@@ -1,0 +1,217 @@
+/* Challenge CSS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    /* background-color: #f5f5f5; */
+    background-color: #1A1A1A;
+    color: white;
+  }
+  
+  .container {
+    /* Add your styles here */
+    /* border: 2px solid red; */
+    max-width: 1200px;
+    margin: 0 auto;
+    
+  }
+  
+  .header {
+    /* Add your styles here */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border: 2px solid green; */
+    margin: 20px 0;
+    gap: 3px;
+  }
+  
+  h1 {
+    /* Add your styles here */
+    color: #EF6565;
+  }
+  
+  .subtitle {
+    /* Add your styles here */
+    opacity: 0.6;
+  }
+  
+  .pricing-container {
+    /* Add your styles here */
+    /* border: 2px solid yellow; */
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+
+  }
+  
+  .pricing-card {
+    /* Add your styles here */
+    width: 300px;
+    /* border: 2px solid green; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 10px;
+    gap: 35px;
+    background-color: #262626;
+    border-radius: 20px;
+    border: 1px inset #262626;
+    margin: 30px;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+
+  }
+  
+  .pricing-card:hover {
+    /* Add your styles here */
+    transform: scale(0.9);
+
+  }
+  
+  .card-header {
+    /* Add your styles here */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+
+
+  }
+  
+  .icon {
+    /* Add your styles here */
+    font-size: 25px;
+  }
+  
+  .popular-tag {
+    /* Add your styles here */
+    color: black;
+    background-color: yellow;
+    padding: 8px 18px;
+    font-size: 10px;
+    font-weight: 600;
+    border-radius: 15px;
+    position: absolute;
+    top: -18px;
+  }
+  
+  .price-block {
+    /* Add your styles here */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #303030;
+    padding: 10px 90px;
+    border-radius: 12px;
+  }
+  
+  .price {
+    /* Add your styles here */
+    font-size: 2em;
+    color:#EF6565; 
+    font-weight: 600;
+  }
+  
+  .period {
+    /* Add your styles here */
+    text-transform: uppercase;
+    opacity: 0.5;
+    font-size: 0.8em;
+  }
+  
+  .features {
+    /* Add your styles here */
+    list-style-type:  none; 
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid red; */
+    padding: 0px 20px;
+    gap: 12px;
+
+    align-self: start;
+  }
+  
+  .features li {
+    /* Add your styles here */
+    font-size: 15px;
+    opacity: 0.8;
+  }
+  
+  .features li.disabled {
+    /* Add your styles here */
+    opacity: 0.5;
+  }
+  
+  .join-btn {
+    /* Add your styles here */
+    width: 85%;
+    border: 2px solid #EF6565;
+    background: transparent;
+    color: #EF6565;
+    font-size: 15px;
+    font-weight: 700;
+    padding: 10px 20px;
+    border-radius:10px ;
+    margin-bottom:10px ;
+    transition: all 0.3s ease-in-out;
+
+  }
+  
+ .join-btn:hover {
+    /* Add your styles here */
+    font-size: small;
+    cursor: pointer;
+    box-shadow: 0 0 10px white;
+    
+    
+   
+  }
+  
+  /* Custom Class Modifiers */
+  .warrior {
+    /* Add your styles here */
+    background-color: #312222;
+    border: 1px inset #EF6565;
+    position: relative;
+  }
+  
+  .champion {
+    /* Add your styles here */
+    background-color: #312D1D;
+    border: 1px inset #FFD93D;
+  }
+  
+  .champion .price {
+    /* Add your styles here */
+    color: #FFD93D;
+  }
+  
+  .champion .join-btn {
+    /* Add your styles here */
+    color:#FFD93D; ;
+    border-color: #FFD93D;;
+  }
+  
+  .champion .join-btn:hover {
+    /* Add your styles here */
+    font-size: small;
+    cursor: pointer;
+    box-shadow: 0 0 10px white;
+  }
+  
+  .price-block.a
+  {
+    background-color: #3C2D2D;
+  }
+  .price-block.b
+  {
+    background-color: #3C3829;
+  }

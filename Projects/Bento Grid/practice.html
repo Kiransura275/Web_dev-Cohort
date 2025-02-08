@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        .container{
+            border: 2px solid red;
+            display: grid;
+            /* grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
+            /* gap: 100px; */
+            height:500px ; 
+            grid-template-areas: "h h h "
+                                " c cener i"
+                                "f f a";
+
+        }
+        .a{
+            grid-area: h;
+        }
+        .b{
+            grid-area:c ;
+        }
+        .c{
+            grid-area: cener;
+        }
+        .d{
+            grid-area: i;
+        }
+        .e{
+            grid-area: f;
+        }
+        .f{
+            grid-area: a;
+        }
+        .item{
+            height: 100px;
+            /* width: 100px; */
+            border: 2px solid;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item a"></div>
+        <div class="item b"></div>
+        <div class="item c"></div>
+        <div class="item d"></div>
+        <div class="item e"></div>\
+        <div class="item f"></div>
+    </div>
+    
+</body>
+</html>

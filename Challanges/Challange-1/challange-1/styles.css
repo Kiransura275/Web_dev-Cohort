@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+      Ubuntu, Cantarell, sans-serif;
+    line-height: 1.6;
+    color: white;
+    background: radial-gradient(black,rgb(26, 24, 37));
+  }
+  
+  .hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 80vh;
+    justify-content: space-around;
+  }
+
+    
+  
+  
+  .announcement {
+    border: 1px solid rgba(26, 24, 37,0.6) ; 
+    background-color:rgba(26, 24, 37,0.6);
+    border-radius: 20px;
+  
+    
+  }
+  
+  .announcement-link {
+    text-decoration: none;   
+    padding: 5px 30px;    
+    border-radius: 10px;
+    font-weight: bolder;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+   
+    
+  }
+  
+  .announcement-link:hover {
+  }
+  
+  .announcement-text {
+   
+    font-size: 13px;
+  }
+  
+  .announcement-button {
+    background-color: rgb(66 63 63 / 60%);
+    padding: 5px 15px 2px 15px;
+    border-radius: 20px;
+  }
+  
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .hero-title {
+    font-size: 52px;
+    text-align: center;
+    line-height: 70px;
+   
+  }
+  
+  .hero-description {
+    opacity: 0.8;
+    text-align: center;
+  }
+  
+  .cta-button {
+    display: flex;
+    color: white;
+    gap: 10px;
+    text-decoration: none;
+    align-items: center;
+    padding: 10px 25px;
+    background: linear-gradient(275deg,rgb(104, 45, 138),rgb(67, 67, 231));
+    border-radius: 25px;
+    font-weight: bolder;
+    transition: background 0.3s ease;
+
+  }
+  
+  .cta-button:hover {
+    cursor: pointer;
+    filter: brightness(1.4);
+    /* box-shadow: 5px 3px 5px rgb(110, 104, 114); */
+  }
+  
+  @media (max-width: 640px) {
+    .hero {
+      padding: 1rem;
+    }
+  
+    .announcement-link {
+      font-size: 0.75rem;
+    }
+  
+    .hero-content {
+      padding: 0 1rem;
+    }
+  }
+  

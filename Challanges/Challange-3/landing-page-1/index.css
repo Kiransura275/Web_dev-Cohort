@@ -1,0 +1,192 @@
+/* Challenge CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Basic styles */
+  body {
+    font-family: "Arial", sans-serif;
+    line-height: 1.6;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url('./assets/chaigym.png');
+    background-size: cover;
+    object-fit: cover;
+   
+  }
+  
+  /* Navbar styles */
+  .navbar {
+    /* Add styles for navbar */
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content:space-between ;  
+    background-color: #333333; 
+    padding: 10px 0;
+  
+
+
+  }
+  
+  .logo {
+    /* Add styles for the logo */
+    display: flex;
+    /* border: 2px solid green; */
+    color: white;
+    align-items: center;
+    font-size: 1.2em;
+    font-weight: 600;
+    gap: 10px;
+    margin: 0 50px;
+
+  
+  }
+
+  
+  .logo img {
+    /* Add styles for logo image */
+    border-radius: 50%;
+    width: 50px;
+    object-fit: cover;
+  }
+  .nav-links
+  {
+    display: flex;
+    align-items: center;
+    margin: 0 60px;
+    gap: 30px;
+
+  }
+  
+  .nav-links a {
+    /* Add styles for nav links */
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    font-size: 16px;
+
+
+    
+    
+  }
+  
+  .nav-links a:hover {
+    /* Add hover styles for nav links */
+    transform: translatey(4px);
+    color: #FF9532;
+    text-shadow: 0 0 2px white;
+
+
+  }
+  
+  /* Hero section styles */
+  .hero {
+    /* Add styles for hero section */
+    border: 1px solid rgba(0,0,0,0.7);
+    height: 95vh;
+  }
+  
+  .hero-content {
+    /* Add styles for hero content */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border:  2px solid red; */
+    color: white;
+    margin: 60px 0px ;
+    gap: 20px;
+    max-width: 100%;
+    text-align: center;
+
+  }
+  
+  .hero-content h1 {
+    /* Add styles for hero heading */
+    font-size: 2.5em;
+    font-weight: 600;
+
+  }
+  
+  .hero-content p {
+    /* Add styles for hero paragraph */
+    font-size: 16px;
+    font-weight: 500;
+  }
+  
+  .cta-button {
+    /* Add styles for CTA button */
+    padding: 14px 25px ;
+    border-radius: 6px;
+    font-size: 14px;
+    border: none;
+    background-color: #f07b0e;
+    transform: all 0.9s ease-in-out;
+  }
+  
+  .cta-button:hover {
+    /* Add hover styles for CTA button */
+    cursor: pointer;
+    /* color: white; */
+    /* font-weight: 700; */
+    transform: scale(0.9);
+
+  }
+  
+  /* Features section styles */
+  .features {
+    /* Add styles for features section */
+    /* border: 2px solid green; */
+    max-width: 95%;
+    margin: 0 auto;
+    background-color: rgba(0,0,0,0.7);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border-radius: 15px;
+  }
+  
+  .feature {
+    /* Add styles for each feature block */
+    border: 2px solid #D96A02;
+    color: white;
+    display: flex;
+    width: 250px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border-radius: 15px;
+    padding: 12px 5px;
+    margin: 50px 20px;
+    transition: all 0.6s ease-in-out;
+    cursor: pointer;
+
+
+  }
+  .feature:hover{
+    transform: scale(0.9);
+  }
+  
+  .feature h3 {
+    /* Add styles for feature heading */
+    color: #D96A02;
+    font-size: 1em;
+  }
+
+  
+  .feature p {
+    /* Add styles for feature paragraph */
+    font-size: 14px;
+  }
+
+  @media screen and (max-width:450px)
+  {
+    .nav-links
+    {
+      display: none;
+    }
+  }
+  

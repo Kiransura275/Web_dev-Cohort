@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #000000;
+}
+
+.container{
+    border: 2px solid;
+    max-width:900px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr) ;
+    margin: auto;
+    gap: 10px;
+    
+
+}
+.items{
+    border: 2px solid #202020;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    /* border: 2px solid yellow; */
+    padding: 0 20px;
+    /* width: 280px; */
+}
+
+
+.items .inner1{
+    height: 55%;
+    /* width: 85%; */
+    width:100%;
+    /* border: 2px solid red; */
+    border-radius: 15px;
+    background-color: #202020;
+    margin-top: 15px;
+
+    
+   
+}
+.items .inner2{
+    padding: 20px 0;
+    color: rgb(245,245, 245);
+    text-align: left;
+    align-self: start;
+    transition: all 0.5s ease-in-out;
+    /* border: 2px solid green; */
+    width: fit-content;
+    transition: all 0.2s ease-in-out;
+    /* transform: translate(40px); */
+
+    /* opacity: 0.9; */
+   
+}
+.items .inner2 img{
+    width: 20px;
+    filter: invert();
+    opacity: 0.7;
+}
+.items .inner2 h3{
+    margin: 8px 0;
+    font-weight: 100;
+}
+.items .inner2 p{
+    font-size: 14px;
+}
+
+.spanner
+{
+    grid-column-end:span 2;
+}
+.items:hover .inner2{
+    transform: translatex(10px);
+    /* background-color: aliceblue; */
+    /* align-self: flex-end; */
+
+}
+@media screen and (max-width:885px) {
+    .container
+    {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        margin: 0 40px;
+    }
+    .spanner
+    {
+        grid-column-end: 2;
+    }
+    
+}
+
