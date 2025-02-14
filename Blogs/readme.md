@@ -7,7 +7,7 @@
 <div>
 <a href="https://seraialization.hashnode.dev/understanding-serialization" target="_blank">
 <h3 style= "color:white">Serialization</h3>
-<img src = "./Assets/four.png" height= 100 width =800>
+<img src = "./Assets/four.png" width =800>
 </a>
 <a target="_blank">
 <h3 style= "color:white" href="https://vanilla-css-intro.hashnode.dev/exploring-vanilla-css">Exploring Vanilla Css</h3>
