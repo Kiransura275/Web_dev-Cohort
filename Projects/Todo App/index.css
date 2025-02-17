@@ -152,6 +152,7 @@
 .todo-input-section {
     display: flex;
     align-items: center;
+    gap: 5px;;
     justify-content: space-between;
     position: relative;
 }
@@ -169,7 +170,7 @@
 
 
 }
-.todo-input-section .todo-input{
+.todo-input{
     width:300px ;
     font-size: 16px;
     outline: none;
@@ -223,7 +224,7 @@
 
 }
 .todo-add-section .list-item-container{
-    width: 94%;
+    width: 93%;
     display: flex;
     flex-direction: column;
     gap: 6px;
@@ -252,6 +253,12 @@
 
     display: flex;
     gap: 6px;
+ 
+}
+.adjust-input{
+    margin-left:15px ;
+    height: 35px;
+    
 }
 .todo-btns{
     font-size: 18px;
@@ -273,7 +280,6 @@
 
 .todo-btns:hover{
     transform: scale(0.9);
-
 
 }
 

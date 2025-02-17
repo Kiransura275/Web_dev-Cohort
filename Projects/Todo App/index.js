@@ -18,7 +18,7 @@ const appendTodoItem = () => {
     const text = textInput.value;
 
 
-    if (text === "") {
+    if (!text.trim()) {
         alert("enter something");
         return;
     }
@@ -26,9 +26,40 @@ const appendTodoItem = () => {
 
     const li = elementCreater('li')
     const data = elementCreater('div', text);
-    const btns = elementCreater('div')
+    const btns = elementCreater('div');
     const edit = elementCreater('button', "Edit");
     const del = elementCreater('button', "Delete");
+    edit.addEventListener('click', ()=>
+    {
+    
+        
+        const inputEle = elementCreater('input');
+        inputEle.value=data.innerText;
+        data.replaceWith(inputEle);
+        inputEle.classList.add("todo-input", "adjust-input")
+    
+        inputEle.focus();
+        const save = elementCreater('button','save');
+        const close = elementCreater('button','close');
+        save.classList.add("todo-btns");
+        close.classList.add("todo-btns");
+        edit.replaceWith(save);
+        del.replaceWith(close);
+        save.addEventListener('click',()=>{
+            data.innerText=inputEle.value;
+            inputEle.replaceWith(data);
+            save.replaceWith(edit);
+            close.replaceWith(del);
+        });
+        close.addEventListener('click',()=>{
+            inputEle.replaceWith(data);
+            save.replaceWith(edit);
+            close.replaceWith(del);                  
+        });
+
+
+
+    })
     del.addEventListener('click', () => {
         li.remove();
     })
