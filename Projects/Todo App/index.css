@@ -1,0 +1,309 @@
+:root{
+    --blue:#01ADAA;
+    /* --black:#0C1F3C;
+    --blue:blueviolet; */
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Baloo Bhai 2", serif;
+    
+  }
+.white{
+    background-color:white;
+    color: black;
+
+}
+.dark{
+    background-color: #0C1F3C;
+    color: white;
+
+}
+
+
+/* navbar */
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px ;
+    border: 1px dotted var(--blue);
+    z-index: 2;
+    position: relative; 
+
+}
+
+.title
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.title .heading
+{
+    color: var(--blue);
+    font-size: 33px;
+}
+.title .logo
+{
+    width: 40px;
+    object-fit: cover;
+}
+.nav-items .nav-bar-species {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    font-size: 18px;
+    text-transform: capitalize;
+    font-weight: 500;
+    opacity: 0.7;
+
+
+}
+.nav-items .nav-bar-species li{
+    transition: 0.3s all ease-in-out;
+}
+
+
+.dark-mode-box{
+
+    display: flex;
+    gap: 18px;
+    align-items: center;
+}
+.dark-mode-box .dark-mode-btn
+{
+    width: 43px;
+    object-fit: cover;
+    cursor: pointer;
+    transform: scale(0.9);
+    transition: 0.2s all ease-in-out;
+
+}
+.login-btn{
+    color: white;
+    background-color: var(--blue);
+    border: none;
+    padding: 7px 17px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 5px;
+    text-transform: capitalize;
+    cursor: pointer;
+    transition: 0.2s all ease-in-out;
+}
+.nav-items .nav-bar-species li:hover{
+    color: var(--blue);
+    cursor: pointer;
+    transform:translateY(3px);
+
+}
+.dark-mode-box .login-btn:hover
+{
+    transform: scale(0.9);
+
+}
+.dark-mode-box .dark-mode-btn:hover{
+    transform: scale(0.7);
+
+}
+
+.hero
+{
+    /* border: 2px solid blue; */
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    border: 2px solid gree;
+}
+
+.hero .todo-section
+{
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    width: 500px;
+    height: 500px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    background-color: whitesmoke;
+    margin: 18px;
+}
+
+
+
+
+
+.hero .todo-section .todo-top-section{
+    display: flex;
+    flex-direction: column;  
+    gap: 10px;
+    margin: 10px 20px;
+}
+.todo-top-section .todo-heading{
+    color: var(--blue);
+    font-weight: 600;
+    font-size: 35px;
+}
+.todo-input-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+.todo-input-section .input-container-show
+{
+    border: 1px solid rgba(0, 0,0, 0.5);
+    width:350px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45px;
+    padding: 0 10px;
+    border-radius:10px ;
+    background-color: white;
+
+
+}
+.todo-input-section .todo-input{
+    width:300px ;
+    font-size: 16px;
+    outline: none;
+    height: 40px;
+    border: none;
+    color: black;
+    opacity: 0.8;
+    background: transparent;
+
+    
+}
+.todo-input-section .add-btn{
+    padding: 6px 22px;
+    border-radius: 6px;
+}
+
+.todo-input-section .todo-input::placeholder{
+    text-indent: 10px;
+    text-transform: capitalize;
+    font-size: 16px;
+}
+.todo-input-section .todo-input:focus~.top-up{
+
+    display: block;
+    top: -12px;
+    z-index: 1;
+    
+   
+}
+
+.top-up
+{
+   
+    position: absolute;
+    left: 25px;
+    top:-380px ;
+    background-color: white;
+    letter-spacing: 1px;
+    color: rgba(0, 0,0, 0.5);
+    transition: 0.1s all ease-in;
+    z-index: -1;
+}
+.hero .todo-add-section{
+   
+    margin-top: 20px;
+    height: 280px;
+    display: flex; 
+    gap: 50px;
+    justify-content: center;
+    overflow:auto
+
+}
+.todo-add-section .list-item-container{
+    width: 94%;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+
+}
+.todo-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid  rgba(0, 0, 0, 0.5);
+    padding: 8px 10px;
+    border-radius: 10px;
+    transform:scaleY(0.95) ;
+  
+}
+.data-container{
+    font-size: 20px;
+    opacity: 0.7;
+    text-indent: 20px;
+   height: 35px;
+   color: black;
+
+
+}
+.btns{
+
+    display: flex;
+    gap: 6px;
+}
+.todo-btns{
+    font-size: 18px;
+    background-color:var(--blue);
+    color: white;
+    font-weight: 500;
+    border: none;
+    padding: 4px 12px;
+    border-radius:5px ;
+    cursor: pointer;   
+    transition: 0.1s all ease-in-out;
+
+}
+
+.clear-all{
+    align-self: self-end;
+    margin: 10px 30px;
+}
+
+.todo-btns:hover{
+    transform: scale(0.9);
+
+
+}
+
+.dark-logo{
+  
+        filter: hue-rotate(90deg); 
+        filter: saturate(150%);   
+        filter: brightness(80%);
+        filter: hue-rotate(90deg) saturate(150%) brightness(80%);
+    
+}
+
+@media screen and (max-width:860px){
+    .nav-items{
+        display: none;
+    }
+}
+@media screen and (max-width:560px){
+    .nav-items,.btns-container{
+        display: none;
+    }
+}
+@media screen and (max-width:500px){
+    .nav-items,.btns-container{
+        display: none;
+    }
+    .todo-section{
+        transform: scale(0.7);
+    
+    }
+}
+
+

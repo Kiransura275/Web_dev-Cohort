@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body class="white">
+    <!-- navbar -->
+    <header>
+        <nav class="navbar">
+            <div class="title">
+                <img src="./Assets/logo.png" alt="logo" class="logo" id ="logo">
+                <h1 class="heading">Chai Todo</h1>
+            </div>
+            <div class="nav-items">
+                <ul class="nav-bar-species">
+                    <li>Home</li>
+                    <li>Support</li>
+                    <li>Contact Us</li>
+                    <li>Help</li>
+                </ul>
+            </div>
+            <div class="dark-mode-box">
+                <img src="./Assets/dark-mode.png" alt="dark-mode" class="dark-mode-btn" id="mode-changer">
+                <div class="btns-container">
+                <button class="login-btn">Sign up</button>
+                <button class="login-btn">Login</button>
+            </div>
+            </div>
+        </nav>
+    </header>
+    <!-- hero section -->
+
+    <main class="hero">
+        <div class="todo-section" id="todo-body">
+            <div class="todo-top-section">
+                <h2 class="todo-heading">Add your Task</h2>
+                <div class="todo-input-section">
+                    <div class="input-container-show">
+                        <input type="text" placeholder="Enter something" class="todo-input" id = "todo-input">
+                        <span class="top-up">Task</span>
+                    </div>
+                    <button class="add-btn login-btn" id ="add">Add</button>
+                </div>
+            </div>
+            <div class="todo-add-section">
+                <ul class="list-item-container" id ="container">
+                  
+
+                </ul>
+            </div>
+            <button class="login-btn clear-all" id ="clear-all">Clear All</button>
+        </div>
+    </main>
+
+
+
+
+
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>
