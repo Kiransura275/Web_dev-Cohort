@@ -69,7 +69,7 @@ const addElement = function(){
 
     const move = elementCreator("div");
     const review = elementCreator("p",data);
-    const date = elementCreator("p",`${Date()-Date()} mins ago`);
+    const date = elementCreator("p",`${new Date().getDate()}/${new Date().getMonth()}/${new Date().getFullYear()}`);
     date.classList.add("date");
     review.classList.add("review");
     move.classList.add("mover");
