@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Chai Review</title>
+</head>
+<body>
+    <header class="top-heading">
+        <img src="./assets/logo.png" alt="logo" class="logo-img" >
+        <h1 class="heading">Chai Pe Review </h1>
+    </header>
+    <main class="main-container">
+        
+        <section class="input-review">
+            <h3 class="input-heading">Add Your Review</h3>
+            <div class="input-section">
+                <label for="name" class="labels">Name : </label>
+                <div class="input-box">
+                <input type="text" id="name" required class="input"placeholder="Enter Your Name">
+                </div>
+                <label for="description" class="labels">Description : </label>
+                <div class="input-box">
+                <textarea name="description" id="description" class="input" rows="4" placeholder="Specify Your Review"></textarea>
+                </div>
+                <label for="Rating" class="labels">Rating : </label>
+
+                <div class="input-box star" id = "stars">
+                    <span class="fa fa-star " onclick="rateWithStar(1)"></span>
+                    <span class="fa fa-star " onclick="rateWithStar(2)"></span>
+                    <span class="fa fa-star " onclick="rateWithStar(3)"></span>
+                    <span class="fa fa-star" onclick="rateWithStar(4)"></span>
+                    <span class="fa fa-star" onclick="rateWithStar(5)"></span>
+                </div>
+                <input type="button" value="submit" id="submit" class="submit-btn">
+            </div>
+           
+        </section>
+        <section class="output-review">
+            <div class="no-items" id="no-items">
+                <img src="./assets/not-found.svg" alt="not found">
+                <span> No Reveiews found</span>
+            </div>
+           
+            <ul class="output-list" id = "output">
+                <!-- <h4 class="out-put-heading">Reviews</h4> -->
+
+              
+               
+              
+               
+               
+               
+                
+               
+                
+            </ul>
+        </section>
+    </main>
+  
+
+    <script src="index.js"></script>
+</body>
+</html>
